@@ -1,0 +1,30 @@
+syntax: glob
+*.bak
+*.pyc
+*.pyo
+*.db
+*.elc
+*.orig
+*.psd
+*~
+*.swp
+*.sql
+*.sqlite3
+Thumbs.db
+.DS_Store
+.coverage
+syntax: regexp
+^\.pc/
+\.svn
+\.git
+^data/
+\.directory
+^.settings/
+^.pydevproject
+^.project
+^log/
+^media/
+^run/
+^static/
+^.idea/
+.vscode/

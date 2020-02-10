@@ -1,0 +1,5 @@
+Host git.repos.solartel
+    HostName {{ grains['update_server_address'] }}
+    IdentityFile /home/solartel/.ssh/.solartel
+    IdentitiesOnly yes
+    User git

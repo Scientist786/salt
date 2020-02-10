@@ -1,0 +1,12 @@
+[Unit]
+Description=Watch_GPIO
+After=network.target
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python /home/solartel/edge.py
+Restart=on-failure
+RestartSec=30s
+[Install]
+WantedBy=multi-user.target

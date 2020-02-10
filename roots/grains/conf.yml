@@ -1,0 +1,10 @@
+grains:
+    tacacs_passwd: newpasswd
+    radius_ipaddr: 192.168.137.3
+    radius_user: hasan
+    radius_passwd: pass
+    radius_replymsg: blank
+    rtc_date: 27 AUG 2019 16:19:00
+    ipv4_address: 192.168.137.2/24
+    ipv6_address: fe80::71f1:3411:c244:5201
+    gateway: 192.168.137.1

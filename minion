@@ -1,0 +1,16 @@
+local: True
+
+file_client: local
+
+master_type: disable
+
+file_roots:
+  base:
+    - /home/solartel/salt/roots
+
+log_file: /var/log/salt/minion.log
+
+log_level: debug
+
+include:
+  - /home/solartel/salt/roots/grains/*.yml
