@@ -2,7 +2,10 @@ This repo contains the Salt states that are applied by the [community edition of
 
 This is configured as a masterless minion, though it could easily be reconfigured as a minion with a Salt master by modifying the `minion` file in this repository.
 
-The SiteLogic Configuration application, which can be found as the `plc_config` state in this repo, presents a user interface from which one can enter key/value pairs representing the desired configuration of the machine. That application creates YAML files, which it puts in `/home/plc/plc_config/salt/yaml`. When `update_system.sh` is executed, which is typically done by a restart of the machine, Salt reads those configuration files as Salt grains and applies the states as appropriate for the machine type, Maple Edge or TCU. In effect, the SiteLogic Configuration application is just a configuration file generator. It does not do any of the configuration.
+The SiteLogic Configuration application, which can be found as the `config` state in this repo, presents a user interface from which one can enter key/value pairs representing the 
+desired configuration of the machine. That application creates YAML files, which it puts in `/home/solartel/config/salt/yaml`. When `update_system.sh` is executed, which is 
+typically 
+done by a restart of the machine, Salt reads those configuration files as Salt grains and applies the states as appropriate for the machine type, Maple Edge or TCU. In effect, the SiteLogic Configuration application is just a configuration file generator. It does not do any of the configuration.
 
 At the moment, due to the fact that `rmc_be` is still under development and its configuration file is changing, the only way to configure the block element interfaces is via the Custom File form which has one freeform text field. You must enter valid YAML into that field an example of which can be found in `backend/example_config.yml`.
 
